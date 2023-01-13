@@ -29,9 +29,9 @@ const assets = async function(req,res){
             for(let j=i;j<coins.length;j++){
                 if(coins[i].changePercent24Hr <coins[j].changePercent24Hr )
                 {
-                    var temp=coins[i].changePercent24Hr
-                    coins[i].changePercent24Hr=coins[j].changePercent24Hr
-                    coins[j].changePercent24Hr=temp
+                    var temp=coins[i]
+                    coins[i]=coins[j]
+                    coins[j]=temp
                 }
             }
         }
