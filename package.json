@@ -1,0 +1,27 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/21tarun/blockchain.git"
+  },
+  "author": "Tarun Udainiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/21tarun/blockchain/issues"
+  },
+  "homepage": "https://github.com/21tarun/blockchain#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fetch": "^1.1.0",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "mongoose": "^6.8.3",
+    "node-fetch": "^2.6.8"
+  }
+}
