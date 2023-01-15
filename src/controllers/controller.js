@@ -24,6 +24,7 @@ const assets = async function(req,res){
         
         result=await result.json()
         const coins =result.data
+        const coins2=[...coins]
         
         for(let i=0;i<coins.length-1;i++){
             for(let j=i;j<coins.length;j++){
@@ -38,7 +39,7 @@ const assets = async function(req,res){
     
         await coinModel.deleteMany()
         
-        const db_data= await coinModel.insertMany(coins,{ordered:true})
+        const db_data= await coinModel.insertMany(coins2,{ordered:true})
         res.status(201).send({status:true,data:coins})
        
     }
